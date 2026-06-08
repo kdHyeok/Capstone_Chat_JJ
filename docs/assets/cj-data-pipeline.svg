@@ -65,14 +65,14 @@
 <g filter="url(#shadow)">
 <rect x="145" y="415" width="260" height="95" rx="12" fill="#0f172a"/>
 <rect x="145" y="415" width="260" height="95" rx="12" fill="rgba(76,29,149,0.42)" stroke="#a78bfa" stroke-width="1.8"/>
-<text x="163" y="443" class="box-title">① 통합공지 CSV</text>
+<text x="163" y="443" class="box-title">04 통합공지 CSV</text>
 <text x="163" y="465" class="box-sub">공지 제목·본문·링크</text>
 <text x="163" y="482" class="box-sub">부서·등록일·모집 현황</text>
 <text x="163" y="499" class="box-sub">카테고리 점수</text>
 </g><g filter="url(#shadow)">
 <rect x="480" y="415" width="260" height="95" rx="12" fill="#0f172a"/>
 <rect x="480" y="415" width="260" height="95" rx="12" fill="rgba(76,29,149,0.42)" stroke="#a78bfa" stroke-width="1.8"/>
-<text x="498" y="443" class="box-title">② 학사공지 CSV</text>
+<text x="498" y="443" class="box-title">05 학사공지 CSV</text>
 <text x="498" y="465" class="box-sub">학사 공지 전용</text>
 <text x="498" y="482" class="box-sub">수강·복학·전과·졸업 등</text>
 <text x="498" y="499" class="box-sub">질문 후보군 축소</text>
@@ -85,5 +85,5 @@
 <text x="833" y="499" class="box-sub">RAG context 구성</text>
 </g><path d="M405 462 L480 462" stroke="#a78bfa" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M740 462 L815 462" stroke="#a78bfa" stroke-width="2.2" marker-end="url(#arrow)"/>
   <rect x="90" y="610" width="1080" height="52" rx="12" fill="rgba(6,78,59,0.32)" stroke="#34d399"/>
-  <text x="120" y="641" class="label">핵심 기여: 단순 크롤링 결과를 챗봇이 바로 검색·필터링·답변 생성에 사용할 수 있는 구조화 데이터로 변환</text>
+  <text x="120" y="641" class="label">핵심 역할: 단순 크롤링 결과를 챗봇이 바로 검색·필터링·답변 생성에 사용할 수 있는 구조화 데이터로 변환</text>
 </svg>
