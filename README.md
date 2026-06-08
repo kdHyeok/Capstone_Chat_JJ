@@ -4,6 +4,15 @@
 
 이 레포는 팀 프로젝트 전체 중에서도 제가 맡았던 공지사항 크롤링, 데이터 정제, 카테고리 분류, 공지 데이터 파이프라인 구축 과정을 정리한 포트폴리오용 저장소입니다.
 
+## 전체 시스템 구조 문서
+
+팀 프로젝트의 5개 레포가 어떻게 나뉘고, `Flutter 앱 → Spring Boot 백엔드 → AI 서버 → Ollama/ChromaDB/CSV`로 어떻게 연결되는지 시각 도표와 함께 정리했습니다.
+
+- [Chat JJ 전체 시스템 구조 문서](docs/system-architecture.md)
+- [전체 아키텍처 SVG](docs/assets/cj-system-overview.svg)
+- [질문 처리 시퀀스 SVG](docs/assets/cj-runtime-sequence.svg)
+- [공지 데이터 파이프라인 SVG](docs/assets/cj-data-pipeline.svg)
+
 ## 프로젝트 개요
 
 - 기간: 2024.03 ~ 2024.06

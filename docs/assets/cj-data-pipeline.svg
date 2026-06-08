@@ -1,0 +1,89 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#34d399"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#fbbf24"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .title { font: 700 28px 'Pretendard', 'Noto Sans KR', Arial, sans-serif; fill: #e2e8f0; }
+      .subtitle { font: 500 13px 'Pretendard', 'Noto Sans KR', Arial, sans-serif; fill: #94a3b8; }
+      .box-title { font: 700 15px 'Pretendard', 'Noto Sans KR', Arial, sans-serif; fill: #f8fafc; }
+      .box-sub { font: 500 11px 'Pretendard', 'Noto Sans KR', Arial, sans-serif; fill: #cbd5e1; }
+      .label { font: 700 11px 'Pretendard', 'Noto Sans KR', Arial, sans-serif; fill: #e2e8f0; }
+      .tiny { font: 500 10px 'Pretendard', 'Noto Sans KR', Arial, sans-serif; fill: #94a3b8; }
+    </style>
+  </defs>
+  <rect width="1280" height="760" fill="#020617"/>
+  <rect width="1280" height="760" fill="url(#grid)" opacity="0.65"/>
+
+  <text x="52" y="58" class="title">공지 데이터 파이프라인</text>
+  <text x="54" y="84" class="subtitle">CJ_Scraping이 챗봇 검색 품질의 원천 데이터를 만드는 과정</text>
+<g filter="url(#shadow)">
+<rect x="70" y="150" width="180" height="110" rx="12" fill="#0f172a"/>
+<rect x="70" y="150" width="180" height="110" rx="12" fill="rgba(251,146,60,0.28)" stroke="#fb923c" stroke-width="1.8"/>
+<text x="88" y="178" class="box-title">1. 목록 크롤링</text>
+<text x="88" y="200" class="box-sub">notice01/notice02</text>
+<text x="88" y="217" class="box-sub">공지 제목·부서·일자·링크</text>
+</g><g filter="url(#shadow)">
+<rect x="300" y="150" width="180" height="110" rx="12" fill="#0f172a"/>
+<rect x="300" y="150" width="180" height="110" rx="12" fill="rgba(251,146,60,0.28)" stroke="#fb923c" stroke-width="1.8"/>
+<text x="318" y="178" class="box-title">2. 상세 본문 수집</text>
+<text x="318" y="200" class="box-sub">BeautifulSoup</text>
+<text x="318" y="217" class="box-sub">본문 내용·첨부 링크</text>
+</g><g filter="url(#shadow)">
+<rect x="530" y="150" width="180" height="110" rx="12" fill="#0f172a"/>
+<rect x="530" y="150" width="180" height="110" rx="12" fill="rgba(251,146,60,0.28)" stroke="#fb923c" stroke-width="1.8"/>
+<text x="548" y="178" class="box-title">3. 이미지/OCR 보강</text>
+<text x="548" y="200" class="box-sub">이미지 링크 추출</text>
+<text x="548" y="217" class="box-sub">EasyOCR/OpenCV</text>
+</g><g filter="url(#shadow)">
+<rect x="760" y="150" width="180" height="110" rx="12" fill="#0f172a"/>
+<rect x="760" y="150" width="180" height="110" rx="12" fill="rgba(251,146,60,0.28)" stroke="#fb923c" stroke-width="1.8"/>
+<text x="778" y="178" class="box-title">4. 일정·마감 추출</text>
+<text x="778" y="200" class="box-sub">정규표현식</text>
+<text x="778" y="217" class="box-sub">모집중/선착순/정보 없음</text>
+</g><g filter="url(#shadow)">
+<rect x="990" y="150" width="180" height="110" rx="12" fill="#0f172a"/>
+<rect x="990" y="150" width="180" height="110" rx="12" fill="rgba(251,146,60,0.28)" stroke="#fb923c" stroke-width="1.8"/>
+<text x="1008" y="178" class="box-title">5. 카테고리 분류</text>
+<text x="1008" y="200" class="box-sub">분류 축 점수화</text>
+<text x="1008" y="217" class="box-sub">통합공지/학사공지 CSV</text>
+</g><path d="M250 205 L300 205" stroke="#fb923c" stroke-width="2.2" marker-end="url(#arrowAmber)"/><path d="M480 205 L530 205" stroke="#fb923c" stroke-width="2.2" marker-end="url(#arrowAmber)"/><path d="M710 205 L760 205" stroke="#fb923c" stroke-width="2.2" marker-end="url(#arrowAmber)"/><path d="M940 205 L990 205" stroke="#fb923c" stroke-width="2.2" marker-end="url(#arrowAmber)"/>
+  <rect x="90" y="345" width="1080" height="210" rx="18" fill="rgba(15,23,42,0.6)" stroke="#334155"/>
+  <text x="120" y="382" class="label">최종 산출물</text>
+<g filter="url(#shadow)">
+<rect x="145" y="415" width="260" height="95" rx="12" fill="#0f172a"/>
+<rect x="145" y="415" width="260" height="95" rx="12" fill="rgba(76,29,149,0.42)" stroke="#a78bfa" stroke-width="1.8"/>
+<text x="163" y="443" class="box-title">① 통합공지 CSV</text>
+<text x="163" y="465" class="box-sub">공지 제목·본문·링크</text>
+<text x="163" y="482" class="box-sub">부서·등록일·모집 현황</text>
+<text x="163" y="499" class="box-sub">카테고리 점수</text>
+</g><g filter="url(#shadow)">
+<rect x="480" y="415" width="260" height="95" rx="12" fill="#0f172a"/>
+<rect x="480" y="415" width="260" height="95" rx="12" fill="rgba(76,29,149,0.42)" stroke="#a78bfa" stroke-width="1.8"/>
+<text x="498" y="443" class="box-title">② 학사공지 CSV</text>
+<text x="498" y="465" class="box-sub">학사 공지 전용</text>
+<text x="498" y="482" class="box-sub">수강·복학·전과·졸업 등</text>
+<text x="498" y="499" class="box-sub">질문 후보군 축소</text>
+</g><g filter="url(#shadow)">
+<rect x="815" y="415" width="260" height="95" rx="12" fill="#0f172a"/>
+<rect x="815" y="415" width="260" height="95" rx="12" fill="rgba(131,24,67,0.35)" stroke="#f472b6" stroke-width="1.8"/>
+<text x="833" y="443" class="box-title">CJ_AI 검색 데이터</text>
+<text x="833" y="465" class="box-sub">CSV + prompt JSON</text>
+<text x="833" y="482" class="box-sub">ChromaDB 벡터 검색</text>
+<text x="833" y="499" class="box-sub">RAG context 구성</text>
+</g><path d="M405 462 L480 462" stroke="#a78bfa" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M740 462 L815 462" stroke="#a78bfa" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <rect x="90" y="610" width="1080" height="52" rx="12" fill="rgba(6,78,59,0.32)" stroke="#34d399"/>
+  <text x="120" y="641" class="label">핵심 기여: 단순 크롤링 결과를 챗봇이 바로 검색·필터링·답변 생성에 사용할 수 있는 구조화 데이터로 변환</text>
+</svg>
