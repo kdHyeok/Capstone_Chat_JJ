@@ -28,7 +28,7 @@
   <rect width="1280" height="760" fill="url(#grid)" opacity="0.65"/>
 
   <text x="52" y="58" class="title">Chat JJ 전체 시스템 구조</text>
-  <text x="54" y="84" class="subtitle">5개 레포가 담당하는 앱 · 백엔드 · AI · 데이터 파이프라인 · 배포 운영 흐름</text>
+  <text x="54" y="84" class="subtitle">팀 전체 구조 참고: 앱 · 백엔드 · AI · 데이터 파이프라인 · 배포 운영 흐름</text>
   <rect x="40" y="112" width="1180" height="245" rx="18" fill="rgba(15,23,42,0.55)" stroke="#334155" stroke-width="1"/>
   <text x="64" y="142" class="label">실시간 질문 처리 경로</text>
 <g filter="url(#shadow)">
@@ -42,21 +42,21 @@
 <rect x="330" y="175" width="210" height="105" rx="12" fill="#0f172a"/>
 <rect x="330" y="175" width="210" height="105" rx="12" fill="rgba(6,78,59,0.45)" stroke="#34d399" stroke-width="1.8"/>
 <text x="348" y="203" class="box-title">CJ_Back</text>
-<text x="348" y="225" class="box-sub">Spring Boot API :8080</text>
-<text x="348" y="242" class="box-sub">JWT · MySQL · Redis</text>
+<text x="348" y="225" class="box-sub">Spring Boot API</text>
+<text x="348" y="242" class="box-sub">인증 · 데이터 저장</text>
 <text x="348" y="259" class="box-sub">AI 서버 중계</text>
 </g><g filter="url(#shadow)">
 <rect x="610" y="175" width="210" height="105" rx="12" fill="#0f172a"/>
 <rect x="610" y="175" width="210" height="105" rx="12" fill="rgba(131,24,67,0.35)" stroke="#f472b6" stroke-width="1.8"/>
 <text x="628" y="203" class="box-title">CJ_AI</text>
-<text x="628" y="225" class="box-sub">Quart AI Server :5001</text>
-<text x="628" y="242" class="box-sub">RAG · SBERT · 번역</text>
+<text x="628" y="225" class="box-sub">AI 서버</text>
+<text x="628" y="242" class="box-sub">검색 데이터 활용</text>
 <text x="628" y="259" class="box-sub">공지/일정/동아리 처리</text>
 </g><g filter="url(#shadow)">
 <rect x="890" y="162" width="190" height="80" rx="12" fill="#0f172a"/>
 <rect x="890" y="162" width="190" height="80" rx="12" fill="rgba(120,53,15,0.36)" stroke="#fbbf24" stroke-width="1.8"/>
 <text x="908" y="190" class="box-title">Ollama</text>
-<text x="908" y="212" class="box-sub">gemma3:4b</text>
+<text x="908" y="212" class="box-sub">LLM</text>
 <text x="908" y="229" class="box-sub">LLM 답변 생성</text>
 </g><g filter="url(#shadow)">
 <rect x="890" y="265" width="190" height="80" rx="12" fill="#0f172a"/>
@@ -67,8 +67,8 @@
 </g><path d="M260 228 L330 228" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M540 228 L610 228" stroke="#34d399" stroke-width="2.2" marker-end="url(#arrowGreen)"/><path d="M820 208 L890 202" stroke="#fbbf24" stroke-width="2.2" marker-end="url(#arrowAmber)"/><path d="M820 250 L890 300" stroke="#a78bfa" stroke-width="2.2" marker-end="url(#arrow)"/>
   <text x="278" y="214" class="tiny">HTTP JSON</text>
   <text x="555" y="214" class="tiny">RestClient</text>
-  <text x="832" y="190" class="tiny">/api/chat</text>
-  <text x="832" y="288" class="tiny">Retriever k=3</text>
+  <text x="832" y="190" class="tiny">chat API</text>
+  <text x="832" y="288" class="tiny">검색 후보</text>
   <rect x="40" y="405" width="1180" height="235" rx="18" fill="rgba(15,23,42,0.55)" stroke="#334155" stroke-width="1"/>
   <text x="64" y="435" class="label">지식 데이터 공급 경로</text>
 <g filter="url(#shadow)">
@@ -81,9 +81,9 @@
 </g><g filter="url(#shadow)">
 <rect x="390" y="470" width="230" height="100" rx="12" fill="#0f172a"/>
 <rect x="390" y="470" width="230" height="100" rx="12" fill="rgba(76,29,149,0.42)" stroke="#a78bfa" stroke-width="1.8"/>
-<text x="408" y="498" class="box-title">최종 CSV</text>
-<text x="408" y="520" class="box-sub">통합공지 / 학사공지</text>
-<text x="408" y="537" class="box-sub">모집 현황 · 링크 · 본문</text>
+<text x="408" y="498" class="box-title">결과 CSV</text>
+<text x="408" y="520" class="box-sub">통합공지 944건</text>
+<text x="408" y="537" class="box-sub">학사공지 482건</text>
 <text x="408" y="554" class="box-sub">AI 검색 원천 데이터</text>
 </g><g filter="url(#shadow)">
 <rect x="700" y="470" width="230" height="100" rx="12" fill="#0f172a"/>
@@ -100,5 +100,5 @@
 <text x="1028" y="537" class="box-sub">서버 접속/운영 메모</text>
 <text x="1028" y="554" class="box-sub">인프라 참고</text>
 </g><path d="M310 520 L390 520" stroke="#fb923c" stroke-width="2.2" marker-end="url(#arrowAmber)"/><path d="M620 520 L700 520" stroke="#a78bfa" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M930 520 L1010 520" stroke="#94a3b8" stroke-width="2.2" stroke-dasharray="6,5" marker-end="url(#arrow)"/>
-  <text x="94" y="682" class="tiny">핵심: 프론트/백엔드/AI는 런타임 연결, 스크래핑은 AI가 참고할 지식 데이터를 공급하는 오프라인 파이프라인이다.</text>
+  <text x="94" y="682" class="tiny">정리: 프론트/백엔드/AI는 런타임 연결, 스크래핑은 AI가 참고할 지식 데이터를 공급하는 오프라인 파이프라인이다.</text>
 </svg>

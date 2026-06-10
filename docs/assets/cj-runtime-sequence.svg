@@ -28,7 +28,7 @@
   <rect width="1280" height="760" fill="url(#grid)" opacity="0.65"/>
 
   <text x="52" y="58" class="title">질문 처리 시퀀스</text>
-  <text x="54" y="84" class="subtitle">사용자 질문이 앱에서 AI 답변으로 돌아오기까지의 실제 호출 흐름</text>
+  <text x="54" y="84" class="subtitle">팀 전체 서비스의 질문 처리 흐름 참고</text>
 <rect x="35" y="120" width="110" height="42" rx="10" fill="rgba(15,23,42,0.9)" stroke="#22d3ee" stroke-width="1.6"/><text x="90" y="146" text-anchor="middle" class="label">사용자</text>
 <path d="M90 165 L90 665" stroke="#22d3ee" stroke-width="1.1" stroke-dasharray="5,6" opacity="0.75"/>
 <rect x="205" y="120" width="110" height="42" rx="10" fill="rgba(15,23,42,0.9)" stroke="#22d3ee" stroke-width="1.6"/><text x="260" y="146" text-anchor="middle" class="label">CJ_Front</text>
@@ -42,15 +42,15 @@
 <rect x="1045" y="120" width="110" height="42" rx="10" fill="rgba(15,23,42,0.9)" stroke="#a78bfa" stroke-width="1.6"/><text x="1100" y="146" text-anchor="middle" class="label">CSV/Chroma</text>
 <path d="M1100 165 L1100 665" stroke="#a78bfa" stroke-width="1.1" stroke-dasharray="5,6" opacity="0.75"/>
 <path d="M90 210 L260 210" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="108" y="186" width="134" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="175.0" y="200" text-anchor="middle" class="tiny">질문 입력</text>
-<path d="M260 260 L470 260" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="278" y="236" width="174" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="365.0" y="250" text-anchor="middle" class="tiny">POST /api/chat 또는 /api/loginChat</text>
-<path d="M470 315 L700 315" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="488" y="291" width="194" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="585.0" y="305" text-anchor="middle" class="tiny">POST /chat 또는 /loginChat</text>
+<path d="M260 260 L470 260" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="278" y="236" width="174" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="365.0" y="250" text-anchor="middle" class="tiny">질문 API 호출</text>
+<path d="M470 315 L700 315" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="488" y="291" width="194" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="585.0" y="305" text-anchor="middle" class="tiny">AI 서버 호출</text>
 <path d="M700 370 L1100 370" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="718" y="346" width="364" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="900.0" y="360" text-anchor="middle" class="tiny">관련 공지 검색 · 룰/카테고리 판단</text>
-<path d="M700 425 L930 425" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="718" y="401" width="194" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="815.0" y="415" text-anchor="middle" class="tiny">Ollama gemma3:4b 호출</text>
+<path d="M700 425 L930 425" stroke="#38bdf8" stroke-width="2.2" marker-end="url(#arrow)"/><rect x="718" y="401" width="194" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="815.0" y="415" text-anchor="middle" class="tiny">LLM 호출</text>
 <path d="M930 480 L700 480" stroke="#34d399" stroke-width="2.2" marker-end="url(#arrowGreen)"/><rect x="718" y="456" width="194" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="815.0" y="470" text-anchor="middle" class="tiny">LLM 응답</text>
-<path d="M700 535 L470 535" stroke="#34d399" stroke-width="2.2" marker-end="url(#arrowGreen)"/><rect x="488" y="511" width="194" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="585.0" y="525" text-anchor="middle" class="tiny">{"response": "..."}</text>
+<path d="M700 535 L470 535" stroke="#34d399" stroke-width="2.2" marker-end="url(#arrowGreen)"/><rect x="488" y="511" width="194" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="585.0" y="525" class="tiny">응답 JSON</text>
 <path d="M470 590 L260 590" stroke="#34d399" stroke-width="2.2" marker-end="url(#arrowGreen)"/><rect x="278" y="566" width="174" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="365.0" y="580" text-anchor="middle" class="tiny">응답 저장 후 반환</text>
 <path d="M260 635 L90 635" stroke="#34d399" stroke-width="2.2" marker-end="url(#arrowGreen)"/><rect x="108" y="611" width="134" height="20" rx="5" fill="#020617" opacity="0.85"/><text x="175.0" y="625" text-anchor="middle" class="tiny">화면 출력</text>
 
   <rect x="70" y="690" width="1120" height="36" rx="10" fill="rgba(15,23,42,0.75)" stroke="#334155"/>
-  <text x="90" y="713" class="tiny">로그인 사용자는 username, major, grade, language가 AI 서버까지 전달되어 개인화 프롬프트에 반영된다.</text>
+  <text x="90" y="713" class="tiny">로그인 사용자 정보는 후속 응답 단계에서 참고 정보로 전달될 수 있다.</text>
 </svg>
