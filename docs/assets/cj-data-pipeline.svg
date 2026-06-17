@@ -28,7 +28,7 @@
   <rect width="1280" height="760" fill="url(#grid)" opacity="0.65"/>
 
   <text x="52" y="58" class="title">공지 데이터 파이프라인</text>
-  <text x="54" y="84" class="subtitle">CJ_Scraping이 챗봇 검색 품질의 원천 데이터를 만드는 과정</text>
+  <text x="54" y="84" class="subtitle">공지 데이터를 수집·정제해 검색용 CSV로 정리하는 과정</text>
 <g filter="url(#shadow)">
 <rect x="70" y="150" width="180" height="110" rx="12" fill="#0f172a"/>
 <rect x="70" y="150" width="180" height="110" rx="12" fill="rgba(251,146,60,0.28)" stroke="#fb923c" stroke-width="1.8"/>
@@ -57,7 +57,7 @@
 <rect x="990" y="150" width="180" height="110" rx="12" fill="#0f172a"/>
 <rect x="990" y="150" width="180" height="110" rx="12" fill="rgba(251,146,60,0.28)" stroke="#fb923c" stroke-width="1.8"/>
 <text x="1008" y="178" class="box-title">5. 카테고리 분류</text>
-<text x="1008" y="200" class="box-sub">분류 축 점수화</text>
+<text x="1008" y="200" class="box-sub">카테고리 점수화</text>
 <text x="1008" y="217" class="box-sub">통합공지/학사공지 CSV</text>
 </g><path d="M250 205 L300 205" stroke="#fb923c" stroke-width="2.2" marker-end="url(#arrowAmber)"/><path d="M480 205 L530 205" stroke="#fb923c" stroke-width="2.2" marker-end="url(#arrowAmber)"/><path d="M710 205 L760 205" stroke="#fb923c" stroke-width="2.2" marker-end="url(#arrowAmber)"/><path d="M940 205 L990 205" stroke="#fb923c" stroke-width="2.2" marker-end="url(#arrowAmber)"/>
   <rect x="90" y="345" width="1080" height="210" rx="18" fill="rgba(15,23,42,0.6)" stroke="#334155"/>
@@ -79,11 +79,11 @@
 </g><g filter="url(#shadow)">
 <rect x="815" y="415" width="260" height="95" rx="12" fill="#0f172a"/>
 <rect x="815" y="415" width="260" height="95" rx="12" fill="rgba(131,24,67,0.35)" stroke="#f472b6" stroke-width="1.8"/>
-<text x="833" y="443" class="box-title">CJ_AI 검색 데이터</text>
-<text x="833" y="465" class="box-sub">CSV + prompt JSON</text>
-<text x="833" y="482" class="box-sub">ChromaDB 벡터 검색</text>
-<text x="833" y="499" class="box-sub">검색 context 구성</text>
+<text x="833" y="443" class="box-title">후속 검색 입력</text>
+<text x="833" y="465" class="box-sub">통합공지 CSV + 학사공지 CSV</text>
+<text x="833" y="482" class="box-sub">카테고리 점수 포함</text>
+<text x="833" y="499" class="box-sub">검색 후보 구성에 활용</text>
 </g><path d="M405 462 L480 462" stroke="#a78bfa" stroke-width="2.2" marker-end="url(#arrow)"/><path d="M740 462 L815 462" stroke="#a78bfa" stroke-width="2.2" marker-end="url(#arrow)"/>
   <rect x="90" y="610" width="1080" height="52" rx="12" fill="rgba(6,78,59,0.32)" stroke="#34d399"/>
-  <text x="120" y="641" class="label">역할: 단순 크롤링 결과를 챗봇이 검색·필터링·답변 생성에 사용할 수 있는 구조화 데이터로 변환</text>
+  <text x="120" y="641" class="label">역할: 공지 수집 결과를 검색에 활용 가능한 구조화 데이터로 정리</text>
 </svg>
