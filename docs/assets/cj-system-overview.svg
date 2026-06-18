@@ -57,7 +57,7 @@
 <rect x="890" y="162" width="190" height="80" rx="12" fill="rgba(120,53,15,0.36)" stroke="#fbbf24" stroke-width="1.8"/>
 <text x="908" y="190" class="box-title">Ollama</text>
 <text x="908" y="212" class="box-sub">LLM</text>
-<text x="908" y="229" class="box-sub">LLM 답변 생성</text>
+<text x="908" y="229" class="box-sub">LLM 응답 처리</text>
 </g><g filter="url(#shadow)">
 <rect x="890" y="265" width="190" height="80" rx="12" fill="#0f172a"/>
 <rect x="890" y="265" width="190" height="80" rx="12" fill="rgba(76,29,149,0.42)" stroke="#a78bfa" stroke-width="1.8"/>
@@ -84,7 +84,7 @@
 <text x="408" y="498" class="box-title">결과 CSV</text>
 <text x="408" y="520" class="box-sub">통합공지 944건</text>
 <text x="408" y="537" class="box-sub">학사공지 482건</text>
-<text x="408" y="554" class="box-sub">AI 검색 원천 데이터</text>
+<text x="408" y="554" class="box-sub">검색 입력 데이터</text>
 </g><g filter="url(#shadow)">
 <rect x="700" y="470" width="230" height="100" rx="12" fill="#0f172a"/>
 <rect x="700" y="470" width="230" height="100" rx="12" fill="rgba(131,24,67,0.35)" stroke="#f472b6" stroke-width="1.8"/>
